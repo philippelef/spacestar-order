@@ -1,0 +1,8 @@
+.general {
+  /* height: 100vh;
+  top: 0;
+  width: 100vw;
+  position: absolute; */
+  height: -webkit-fill-available;
+  max-height: 100vh;
+}

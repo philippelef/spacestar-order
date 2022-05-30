@@ -1,0 +1,72 @@
+.SucceedLayout {
+    /* min-height: 100vh; */
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+
+    overflow-x: hidden;
+
+    color: white;
+    background: radial-gradient(circle at 50% 50%,
+            hsl(199deg 74% 57%) 0%,
+            hsl(231deg 60% 76%) 53%,
+            hsl(303deg 36% 74%) 68%,
+            hsl(348deg 62% 80%) 77%,
+            hsl(7deg 69% 80%) 84%,
+            hsl(13deg 75% 78%) 89%,
+            hsl(19deg 78% 76%) 94%,
+            hsl(25deg 77% 73%) 100%);
+}
+
+.h1 {
+    font-size: 22px;
+    text-shadow: #f7adc5 1px 1px;
+}
+
+.SucceedInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SucceedInfo a {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.GoBackButton {
+    margin-top: 50px;
+    width: 280px;
+    height: 80px;
+    cursor: pointer;
+    pointer-events: painted;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.GoBackButton a {
+    color: #f7adc5;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.GoBackButton:hover {
+    box-shadow: 5px 5px 25px -15px rgb(14, 2, 2);
+    transform: scale(1.04);
+}

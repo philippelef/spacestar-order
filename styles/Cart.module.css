@@ -1,0 +1,315 @@
+.CartPreviewWrapper {
+    text-align: center;
+}
+
+.Cart {
+    overflow-y: auto;
+}
+
+.emptyCart {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.TopRight {
+    z-index: 199;
+    position: absolute;
+    width: 80px;
+    height: 75px;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 1em;
+}
+
+.amountWrapper {
+    color: white;
+    background-color: linear-gradient(180deg, rgba(188, 224, 255, 1) 0%, rgba(255, 213, 220, 1) 100%);
+    font-family: ClashDisplayThin;
+    border-radius: 10px;
+    padding-top: 8px;
+    font-size: 25px;
+    top: 20px;
+    right: 50px;
+    width: 20px;
+    text-align: center;
+}
+
+.CartLogo {
+    height: 37px;
+    fill: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.CartLogo:hover {
+    fill: grey
+}
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    background: linear-gradient(180deg, rgba(188, 224, 255, 1) 0%, rgba(255, 213, 220, 1) 100%);
+    width: 350px;
+    top: 0;
+    bottom: 0;
+    right: -350px;
+    padding: 0;
+    z-index: 200;
+    overflow-y: scroll;
+    transition: all 0.3s ease;
+    color: white
+}
+
+.active {
+    box-shadow: 0px 0px 50px 0px black;
+    right: 0;
+    transform: all 0.3s ease;
+}
+
+
+.BackButton {
+    border-color: white;
+    right: 0;
+    height: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 30px;
+    padding-right: 0rem;
+    font-size: 20px;
+    color: white;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.BackButton p {
+    font-size: 20px;
+}
+
+.BackButtonHover {
+    width: 55px;
+    transition: all 0.1s ease-in-out;
+}
+
+.BackButtonHover:hover {
+    fill: grey
+}
+
+
+.cartRow {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+}
+
+
+.smallImageWrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.priceWrapper {
+    width: 40px;
+    text-align: center;
+}
+
+.itemName {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    font-size: 15px;
+}
+
+.infoWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    width: 80px;
+}
+
+.changeAmout {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.changeAmout a {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.warnAmout {
+    animation-duration: 1s;
+    animation-name: warnamount;
+}
+
+@keyframes warnamount {
+    10% {
+        transform: scale(1.4)
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+.checkoutWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: center;
+    flex-grow: 10;
+    margin-top: 20px;
+    margin-bottom: 10%;
+}
+
+.checkoutButton {
+    width: 280px;
+    height: 80px;
+    cursor: pointer;
+    pointer-events: painted;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+
+.checkoutButton a {
+    color: #f7adc5;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.checkoutButton:hover {
+    box-shadow: 5px 5px 25px -15px rgb(14, 2, 2);
+    transform: scale(1.04);
+}
+
+.amountIndicator {
+    height: 25px;
+    width: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.add {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-left-style: solid;
+    border-color: white;
+    color: white;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.remove {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-right-style: solid;
+    border-color: white;
+    color: white;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.subTotal {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    text-align: left;
+    color: white;
+}
+
+.subTotal a {
+    text-align: left;
+}
+
+.subTotalPriceWrapper {
+    text-align: right !important;
+}
+
+.ldsRing {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: scale(0.6);
+}
+
+.ldsRing div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fbd5de;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fbd5de transparent transparent transparent;
+}
+
+.ldsRing div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.ldsRing div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.ldsRing div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
