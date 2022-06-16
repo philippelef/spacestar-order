@@ -1,9 +1,8 @@
 # Quick words
+
+You can visit the deployed version on vercel [here](https://spacestar-order.freddies.fr)
+
 This website was made specifically to order SPACESTAR album, during the time period where we made deliveries. You _cannot_ order CD's right now because the MongoDB to which it was connected is not up anymore. Thus, the CD will show as out of stock.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-
-app).
-
 ## Getting Started
 
 First, run the development server:
